@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shang Jiang | Code 2 Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="./style.css" rel="stylesheet" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <style>
+      #www {
+        position: static !important;
+      }
+
+      img {
+        float: none !important;
+      }
+    </style>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Shang Jiang</h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a></li>
+        <li>Project <a href="p2.html">#2</a></li>
+        <li>Project <a href="p3.html">#3</a></li>
+        <li>Project <a href="p4.html">#4</a></li>
+        <li>Project <a href="p5.html">#5</a></li>
+        <li>Project <a href="p6.html">#6</a></li>
+        <li>Project <a href="p7.html">#7</a></li>
+        <li>Project <a href="p8.html">#8</a></li>
+        <li>Project <a href="p9.html">#9</a></li>
+        <li>Project <a href="p10.html">#10</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #5 Optical Illusion
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          width="400"
+          height="600"
+          src="https://preview.p5js.org/jians123/embed/wefWC0coZ"
+        ></iframe>
+      </div>
+      <a href="https://editor.p5js.org/jians123/sketches/wefWC0coZ"
+        >Link to Code Sketch</a
+      >
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Design Description
+      </h1>
+
+      <div>
+        <p>
+          I come from a traditional Chinese background, and I would like to
+          choose lotus flower to present optical illusion. Lotus is linked with
+          many of the pristine qualities that one would like to possess. Thus,
+          over China's long history, many renowned poets have used lotus to
+          combine it with other beautiful words to create a magnificent poetry
+          that the Chinese have read for thousands of years. It has now become a
+          part of Chinese culture.
+        </p>
+      </div>
+
+      <div>
+        <h1>
+          Design Strategies
+        </h1>
+
+        <img
+          src="https://cdn.glitch.me/61663dce-73a9-4452-8ce7-a5d31d176447%2F1.png?v=1633385437727"
+        />
+
+        <p>
+          I picked a photograph of a real lotus blossom as my draft in order to
+          produce a realistic and vibrant visual illusion. After that, I edited
+          it in Photoshop. For example, I put some additional petals to the
+          lotus to depict the process of the flower from closing to blossoming.
+          I created some straight lines in the photo and subsequently covered it
+          with a graphic made up of several black lines to clearly depict each
+          stage of lotus development. The audience may experience the illusion
+          of the lotus flower opening or shutting in the express as the black
+          lines move back and forth.
+        </p>
+      </div>
+
+      <div id="www">
+        <h1>
+          Reflection
+        </h1>
+        <p>
+          I didn't utilize any complex coding in this project. I just considered
+          changing the track of the movement of the black lines picture after
+          importing the photo of lotus with some lines and the picture of black
+          lines into P5JS. Two variables were used: t and n. T indicates the
+          change's starting value, which is 0. N is the amount that is added to
+          T each time. I set n to 0.5 since I used 0.5 as a unit of measurement
+          comparable to resolution ratio, therefore it should be divisible by
+          600px. Because the black line travels horizontally, the x value in its
+          coordinate axis should be changed to t. As a result, I wrote an if
+          statement that causes the black lines to travel to the right when it
+          starts playing, but when they reach the canvas edge, they begin to
+          move to the left. In addition, I modified two functions: when the left
+          mouse button is long pressed, the movement stops; when the mouse
+          button is released, the movement resumes. Overall, because computer
+          languages are so versatile, I believe logic is a critical component of
+          generating animation effects using P5JS. It's the ideal option if you
+          can accomplish your goals with few lines of code.
+        </p>
+      </div>
+
+      <div class="fullwidth"></div>
+
+      <!-- 4. reflection -->
+
+      <!-- 5. reflection -->
+    </div>
+  </body>
+</html>

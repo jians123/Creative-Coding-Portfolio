@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shang Jiang | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <style>
+      #www {
+        position: static !important;
+      }
+
+      img {
+        float: none !important;
+      }
+    </style>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>Shang Jiang</h1>
+      <ul>
+        <li>Home <a href="index.html">#0</a></li>
+        <li>Project <a href="p2.html">#2</a></li>
+        <li>Project <a href="p3.html">#3</a></li>
+        <li>Project <a href="p4.html">#4</a></li>
+        <li>Project <a href="p5.html">#5</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>Project #2 Experimental Camera Part2</h1>
+
+      <!-- 3. write a short description to describe what the work is about -->
+
+      <div>
+        <h1>Introduction</h1>
+        <p>
+          I created 6 different classes of gestures to generate 6 different
+          music melodies. The main purpose of my work is to combine human
+          gestures with music. It will recognize the speed, orientation, front
+          and back of different gestures, and play different music and video
+          effects. In the future, Teachable Machine will further recognize more
+          complex human gestures, such human body movements, and combine these
+          movements to play various musical instrument melodies. With this tool,
+          people will not have to concern about what music and video effects to
+          choose, they can randomly create their own simple favorite movements
+          and just leave the complex creative process to the tool. Therefore,
+          the purpose of this project is to allow people to be musicians or
+          dancers anytime, anywhere.
+        </p>
+      </div>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          width="600"
+          height="600"
+          src="https://editor.p5js.org/jians123/full/4vfl58E7y"
+        ></iframe
+        >"
+      </div>
+      <a href="https://editor.p5js.org/jians123/sketches/4vfl58E7y"
+        >Link to Code Sketch</a
+      >
+      <a
+        href="https://drive.google.com/file/d/127Ibar2AIC8MwHmUTLM2sjgeQFmdNxEB/view?usp=sharing"
+        >Link to Teachable Machine Training</a
+      >
+
+      <div>
+        <h1>Working Progress</h1>
+        <p>
+          I have shown several demos to my peer, and we have found two main
+          issues on my tool: 1) The accuracy of tool gestures recognition. 2)
+          The lack of richness on canvas display. In order to solve First
+          issues, I improved the recognition of my gestures in machine learning
+          tool. A slow-motion camera will be used, which can capture 240 photos
+          per second, to capture the details of my every gesture to make the
+          system clearly recognize the changes of gestures. In addition, I have
+          to change the wrist joints. The direction of rotation and the motion
+          of waving, and distinguish between two hands and one hand to increase
+          the accuracy of tool gestures recognition. For the lack of canvas
+          display, I also improved the visual effects, and made a greater
+          distinction between the appearance of the graphics on the canvas, such
+          as different colors, sizes of bars, and numbers of appearances. As a
+          result, various visuals can make the tool more interesting and easier
+          to interact.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1-6pJMOWl94jrS5KnhNFFXySIuYYAIkKi/view?usp=sharing"
+          >Link to Video Demo</a
+        >
+        <a href="https://editor.p5js.org/jians123/sketches/i9EYvZU7G"
+          >Link to my first draft</a
+        >
+
+        <img
+          src="https://cdn.glitch.global/515759f7-7c2f-4e96-b05d-f4785791afd3/1a0db0cc966ab69e35b0d4e39f467e9.png?v=1647201102974"
+        />
+        <img
+          src="https://cdn.glitch.global/515759f7-7c2f-4e96-b05d-f4785791afd3/8ca9dd2872cc62db129fe07dddf340f.png?v=1647201161427"
+        />
+        <img
+          src="https://cdn.glitch.global/515759f7-7c2f-4e96-b05d-f4785791afd3/88e7b8b9de14fea1a1148fa204b9d1e.png?v=1647201212961"
+        />
+        <img
+          src="https://cdn.glitch.global/515759f7-7c2f-4e96-b05d-f4785791afd3/6994329019ebe0102946b1e42449865.png?v=1647201249146"
+        />
+        <img
+          src="https://cdn.glitch.global/515759f7-7c2f-4e96-b05d-f4785791afd3/42556d2d8d45c67c72faf41743f3b59.png?v=1647201289347"
+        />
+        <img
+          src="https://cdn.glitch.global/515759f7-7c2f-4e96-b05d-f4785791afd3/b61648f12a13bda24acd01886a2c320.png?v=1647201322796"
+        />
+      </div>
+
+      <div>
+        <h1>Reflection</h1>
+        <p>
+          Even though there is a good demonstration of the functionality of the
+          teachable machine tool, but the it is very sensitive to the
+          surrounding user's environment, because this tool is only captured by
+          recording static pictures of gesture changes with the white
+          background, so although I did a lot of testing as well as the
+          improvement. However, the only issue is that if the background behind
+          the user is not white since the system only recognizes white walls,
+          some gesture changes will not be detected very well, resulting in a
+          bit of confusion in the music variations. Therefore, in order to
+          prevent tool effects by the user's background, I will improve the
+          recognition and positioning of the tool's algorithm for gestures, by
+          blurring the user's background to enhance the depth of field effect,
+          and reduce the impact of the background to increase the accuracy of
+          the tool.
+        </p>
+      </div>
+
+      <div class="fullwidth"></div>
+
+      <!-- 4. reflection -->
+
+      <!-- 5. reflection -->
+      <div></div>
+    </div>
+  </body>
+</html>
